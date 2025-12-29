@@ -20,6 +20,7 @@ STATUS_CHOICES = (
     ("Draft", "Draft"),
     ("Published", "Published"),
     )
+
 class Blog(models.Model):
     title = models.CharField(max_length=100)
     slug = models.SlugField(max_length=150, unique=True, blank=True)
